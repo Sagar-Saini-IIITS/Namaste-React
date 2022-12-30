@@ -1,0 +1,79 @@
+1. What is Emmet?
+
+   - Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.
+   - For example, 
+      this abbreviation: ul#nav>li.item$*4>a{Item $}
+
+       can be expanded into:
+
+       <ul id="nav">
+        <li class="item1"><a href="">Item 1</a></li>
+        <li class="item2"><a href="">Item 2</a></li>
+        <li class="item3"><a href="">Item 3</a></li>
+        <li class="item4"><a href="">Item 4</a></li>
+       </ul>
+
+
+2. Difference between a Library and Framework?
+   
+   - Frameworks and libraries are both pieces of code authored by others to solve everyday problems.
+   - Inversion of Control- our code calls the library’s code, but in a framework, it’s the framework’s code that calls our code.
+   - Libraries differ from frameworks in that they contain prewritten code snippets that can be used (and reused) for common functions. Unlike libraries,frameworks are a full toolkit for shaping and organizing your web application. Frameworks describe how developers design applications.
+
+
+3. What is CDN? Why do we use it?
+   
+   - A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content.
+   - A CDN allows for the quick transfer of assets needed for loading Internet content including HTML pages,  javascript files, stylesheets, images, and videos.
+   
+
+4. Why is React known as React?
+   
+   - React is named React because of its ability to react to changes in data. When the data in a React component changes, React will automatically re-render the component so that it reflects the new data. This makes it easy to create performant user interfaces that always look up-to-date.
+
+
+5. What is crossorigin in script tag?
+  
+  - The purpose of crossorigin attribute is used to share the resources from one domain to another domain.
+  - Syntax:  <script crossorigin="anonymous|use-credentials">
+  - Attribute Values:
+
+    Value	                           Description
+    anonymous & use-credentials	       specifies the mode of the CORS request:
+    anonymous                          A cross-origin request is performed. No credentials are sent
+    use-credentials                    A cross-origin request is performed. Credentials are sent .
+
+
+6. What is diference between React and ReactDOM
+   
+   - React is a JavaScript library for building User Interfaces and ReactDOM is the JavaScript library that allows React to interact with the DOM.
+
+
+7.  What is difference between react.development.js and react.production.js files via CDN?
+ 
+    - The very basic difference is that Production Build has compressed version of your javascript code, so this makes rendering of file on end user's browser very quick and performance enhancing.
+
+
+ 8. What is async and defer?
+
+    - Without async or defer: <script src="myscript.js"></script>
+      HTML parsing till we hit script.
+      Make requests to fetch the files on hitting script.
+      Exe­cute the script the moment the files are downloaded.
+      Resume HTML Parsing.
+
+    - With defer: <script defer src="myscript.js"></script>
+      Make par­al­lel requests to fetch the indi­vid­ual files.
+      Con­tinue html pars­ing as if it was never interrupted.
+      Fin­ish html pars­ing even if the script files have downloaded.
+      Exe­cute each script in the order they were encoun­tered in the document.
+
+    - With async: <script async src="myscript.js"></script>
+      Make par­al­lel requests to fetch the indi­vid­ual files.
+      Con­tinue html pars­ing as if it was never interrupted.
+      Exe­cute the indi­vid­ual scripts the moment the files are downloaded.
+      Resume html parsing.
+
+    Conclusion:
+    Defer attribute is useful when script is using for DOM manipulations.
+    Async attribute is useful when script is not using for DOM manipulation. Some time you need script only for server side operations or for handling cache or cookie but not for DOM manipulations.
