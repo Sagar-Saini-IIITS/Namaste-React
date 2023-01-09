@@ -1,0 +1,62 @@
+A. Summary of Chapter
+   
+   - npm is package manager that is used for managing and sharing the packages.
+   - To initialize npm: npm init
+   - package.json contains metadata of project.
+   - package-lock.json tells about the current version of package we are using.
+   - ^ and ~ used inside package.json to upgrade package to minor and major verion update.
+   - dev-dependency : dependency required during development only and installed as:
+                      npm install -D package-name
+   - node_modules is basically a database for npm, contains all the dependency and transitive dependency.
+   - injecting react and react-dom:
+       npm i react react-dom
+   - Bundler is a tool frontend developers use to bundle JavaScript modules into a single JavaScript files 
+     that can be executed in the browser. example: webpack(default bundler in create-react-app), parcel
+   - Bundler is a BEAST, zero config and done following things for us:
+      development server, port number
+      hot reloading
+      diagnostics ( tells error and fix)
+      caching
+      tree shaking
+      image optimization
+      compress app before you deploy
+      minification (Minification reduces the file size of your output bundles by removing whitespace,
+                    renaming variables to shorter names, and many other optimizations.)
+      transpilation ( Parcel transpiles your JavaScript and CSS for your target browsers automatically!
+                      Just declare a browserslist in your package.json, and Parcel takes care of transpiling
+                       only what's needed)
+   - we are using parcel here.
+   - npx pacrel index.html
+   - npx pacel build index.html 
+   -  and dist folder contains build files
+   - .parcel-cache used by parcel to do its tasks and created automatically.
+   - transitive dependency
+   - added scripts for startand build
+   - and many other plays with code and things
+
+
+B. Assignment
+
+   - Hot Module Replacement:
+      HMR allows you to exchange, add, or remove JavaScript modules
+      while the application is running, all without having to reload the browser.
+
+   - Script Type:
+      * The <script> HTML element is used to embed executable code or data; 
+        this is typically used to embed or refer to JavaScript code. 
+      * The HTML <script> type Attribute is used to specify the type of
+        script and identify the content of the Tag. 
+        It has a Default value which is “text/javascript”
+      * "module" is one such type.
+         A script tag having type="module" attribute specifies that it to be
+         considered as a Javascript module. It may be importing other 
+         Javascript module(s) inside it and becomes a "top-level" module 
+         for the imported modules. 
+
+   - Browserslist:
+     As javascript evolves, browsers won't support new features at the same pace,
+     for instance not all browsers have built-in support for ES6 (aka ES2015).
+     By using browserslist, transpilers/bundlers know what browsers you want to support, 
+     so they can "group" browsers in different categories and generate separate bundles.
+
+      
