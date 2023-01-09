@@ -1,3 +1,38 @@
+A. Summary of Chapter:
+
+   - injected React using CDN.
+   - Learnt about how to display "Namaste" on screen using HTML, then using Javascript and then React;
+     HTML: <h1> Namaste </h1>
+     Javascript: <script>
+                  const heading= document.createElement("h1");
+                  heading.innerHTML="Namaste";
+                  const root=document.getElementById("root");
+                  root.appendChild(heading);
+                  </script>
+      React: const heading = React.createElement("h1",{ id: "title1"}, "Namaste JS");
+             //specifying the parent inside which react element will present
+             const root = ReactDOM.createRoot(document.getElementById("root"));
+
+             //passing a react element inside the root
+             root.render(heading);
+
+   - Rendering multiple children
+       const heading = React.createElement("h1",{ id: "title1"}, "Namaste JS");
+       const heading2 = React.createElement("h2",{ id: "title2",},"Namaste React");
+       const container = React.createElement("div",{id: "container",},[heading, heading2] );
+        //specifying the parent inside which react element will present
+       const root = ReactDOM.createRoot(document.getElementById("root"));
+        //passing a react element inside the root
+       root.render(container);
+
+   - Everything about working of appendChild,createElement,parameter passed inside createElement,
+     creating root, render. 
+
+
+
+
+B. ASSIGNMENT:
+
 1. What is Emmet?
 
    - Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.
@@ -56,7 +91,7 @@
 
  8. What is async and defer?
 
-    - Without async or defer: <script src="myscript.js"></script>
+    - Without async or defer: <script src="myscript.js"></>
       HTML parsing till we hit script.
       Make requests to fetch the files on hitting script.
       Exe­cute the script the moment the files are downloaded.
