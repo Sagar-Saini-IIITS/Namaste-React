@@ -1,0 +1,33 @@
+A. Summary of Chapter
+   
+   - Babel, which basically take care of coversion of newer version of js code into older one that 
+     browser understands.
+   - Babel comes as dependency along with bundler ,which is parcel in our case. 
+   - That sbove older code is known as Polyfill.
+   - package to remove console.log:
+      babel-plugin-transfor-remove-console
+   - JSX is a HTML like syntax which helps us in producing react elements.
+   - Normally:
+       React.createElement() gives us ----> Object which converts into ----> HTML (DOM)
+     Using JSX:
+       JSX converts by babel into ----> React.createElement() gives us ----> Object which converts into ----> HTML (DOM)
+   - JSX enhances readability,maintainability,require less code and is developer friendly.
+   - Components are independent and reusable bits of code.
+   - Functional and Class Components
+   - { } we write js inside these brackets in components.
+   -  Ways to load another functional component:
+      <Comp> </Comp>
+      <Comp/>
+      {Comp()}
+   - to render inside root:
+     normal element: root.render(ele_name)
+     fn component: root.render(<fnComp_name/>)
+   - Component COmposition : Component can render any other component as well
+   
+
+
+
+B. Assignment
+
+    Coding assignment done in .html .js files and theory assignment is covered in summary.
+      
