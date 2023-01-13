@@ -1,0 +1,21 @@
+.title{
+    display: flex;
+    justify-content: space-between;
+    border:2px solid black;
+    height: 60px;
+    align-items: center;
+    padding-right: 20px;
+}
+.title img{
+    width: 100px;
+    padding: 3px;
+}
+input{
+    height:50%;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: 2px solid black;
+    width:300px;
+    padding: 5px;
+    
+}

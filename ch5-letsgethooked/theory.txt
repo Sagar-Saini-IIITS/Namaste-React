@@ -1,0 +1,30 @@
+A. Summary of Chapter
+   
+   - Exporting of fn comp can be done in two ways, Named and Default.
+   - Named export: we can have multiple named export in a file
+      export const Title = () =>{
+
+      }
+   - Default export: we can only have one default export.
+      const Title = ()=>{}
+      export default Title;
+   - Importing named export:
+      import {Title} from './xyz/Title'
+   - Importing default export
+      import TItle from './xyz/Title'
+   - to import all named export in one line:
+      import * as obj from './xyz'
+   - good practise to put hard coded data in separate file. (config.js/constans.js)
+   - React Hooks: just a js function which provides some functionalities
+   - useState() Hook: helps in creating state variable which helps in managing state of app.
+       
+
+   
+
+
+
+B. Assignment
+
+    Coding assignment done in .html .js files and theory assignment is covered in summary.
+    Fixed the search feature bug.
+      
