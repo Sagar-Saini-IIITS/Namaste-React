@@ -1,2 +1,2 @@
-<img src="./ui/img1.png" alt="Home Page" title="Home Page">
-<img src="./ui/img2.png" alt="Searching on Home Page" title="Searching on Home Page">
+![Image 1](/ui/img1.png)
+![Image 2](/ui/img1.png)
