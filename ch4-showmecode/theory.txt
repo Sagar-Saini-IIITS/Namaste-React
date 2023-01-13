@@ -1,0 +1,45 @@
+A. Summary of Chapter
+   
+   - writing comment in jsx : { // javascript }
+   - we must have one parent while writing in jsx.
+   - we can add div as parent but that sometimes results in extra element in DOM and is of no use.
+   - We use react fragments as parent and wrap everything inside them.
+     Syntax:
+            <React.fragment> </React.fragment>
+            <> </> (shorthand)
+   - JSX,ES6 not mandatory but we use for own convenience.
+   - we can write inline style css:
+     <div style={{color:"blue"}}> </div>
+      or
+     const obj={color:"blue"}
+     <div style{obj}> </div>
+   - Config Driven UI: Approach in which we build UI so that we can target different groups of 
+                       user with different UI configurations.
+   - props (properties), helpful in passing data to component.
+   - optional chaining(?.): it shows up undefined instead of error if object's property/fn value is null
+                         or undefined on accessing.
+                         animal.dog?.name
+                         animal.getname?.()
+   - destructuring data or props
+   - spread operator : The JavaScript spread operator (...) allows us to quickly copy all or part of an existin
+                 array or object into another array or object. 
+   - map is best way to loop.
+   - Virtual DOM- representation of actual DOM
+   - Reconciliation: algo used to find out diff bw tree of actual and virtual dom and updates
+                     whats need to be updated.  
+   - React Fiber - React Fiber is an ongoing reimplementation of React's core algorithm.
+   - Keys helps in uniquely identifying elements in react and improves performance when we have children with
+      same name/tag.
+   - Its not recommended to use index as keys.
+   - We might face following issues when we use index value as key attribute when creating a list:
+         Performance Issues due to unnecessary re-renders.
+         Issues in data mapping in case list items are sorted, filtered, or deleted.
+
+   
+
+
+
+B. Assignment
+
+    Coding assignment done in .html .js files and theory assignment is covered in summary.
+      
