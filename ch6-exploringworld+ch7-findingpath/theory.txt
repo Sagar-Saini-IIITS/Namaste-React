@@ -1,0 +1,16 @@
+A. Summary of Chapter
+   
+    Assignment
+    
+    - Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs.
+    - a monolithic application is a single unified unit, a microservices architecture breaks it down into a collection of smaller independent units.
+    -  By using useEffect Hook, you tell React that your component needs to do something after render. 
+    - optional chaining, shimmer ui
+    - expression/statement, conditional rendering
+    - cors
+    -spa
+    - useEffect
+    - client vs server side routing
+    - react router
+    - error page
+    - dynamic routing
