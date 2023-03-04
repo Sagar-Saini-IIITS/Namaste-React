@@ -1,0 +1,8 @@
+A. Summary of Chapter
+   
+    Assignment
+    
+    - class based component
+    -life cycle methods
+    - custom hooks
+    - lazy loading
